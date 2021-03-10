@@ -2,4 +2,4 @@
 
 My solutions using JS/Node.js (the only dependency is `lodash`)
 
-Aiming to be consice without being cryptic
+Aiming to be concise without being cryptic

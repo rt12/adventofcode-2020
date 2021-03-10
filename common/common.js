@@ -2,7 +2,18 @@ const fs = require("fs");
 
 module.exports = {
     readLines,
+    readGroups,
+    parseNumberArray,
     splitGroups
+}
+
+function parseNumberArray(line) {
+    return line.split(",").map(Number);
+}
+
+function readGroups(filename) {
+    const data = fs.readFileSync(filename, {encoding: "utf-8"});
+    return data.split("\n\n").map((g) => g.split("\n"));
 }
 
 function readLines(filename) {
